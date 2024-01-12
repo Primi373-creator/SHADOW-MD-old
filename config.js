@@ -21,8 +21,8 @@ global.prefa = ["#"];                                    //Default prefix here. 
 
 
 //
-global.Owner = ["2349067654525", "2348150735460"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["2349067654525", "2348150735460"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.Owner = ["2349067654525", "2348150735460"];         //If you want singal number so global.Owner = ['2349067654525'] Change into your number.
+global.OwnerNumber = ["2349067654525", "2348150735460"];   //If you want singal number so global.Owner = ['2349067654525'] Change into your number.
 global.ownertag = ["2349067654525"];
 global.OwnerName = "Cipher";
 global.BotName = "Shadow";
