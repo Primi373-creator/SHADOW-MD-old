@@ -1,0 +1,25 @@
+
+{
+  "name": "shadow-MD",
+  "description": "A WhatsApp bot based on Baileysjs library (Ts+Js) with Multi Device support",
+  "repository": "https://github.com/Cipher0071/SHADOW_MD",
+  "logo": "https://i.pinimg.com/originals/c4/65/d1/c465d1803eb6190ece39dc6732696b59.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
