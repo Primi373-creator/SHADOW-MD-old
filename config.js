@@ -13,26 +13,26 @@ global.autoTyping = false;                //auto tying by default off.
 global.autoRecord = false;                //auto recording by default off.
 global.groupevent = false;                //This is the new variable for controlling group event handling.
 global.statusseen = true;                 //This is the new variable for controlling status seen.
-global.autoreadgc = true;
+global.autoreadgc = false;
 
 
 //
-global.prefa = ["."];                                    //Default prefix here. you can change if you want.
+global.prefa = ["#"];                                    //Default prefix here. you can change if you want.
 
 
 //
-global.Owner = ["916297175943", "919362639362"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["916297175943", "919362639362"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.ownertag = ["916297175943"];
-global.OwnerName = "Kai";
-global.BotName = "A17";
-global.packname = "A17 Bot";                             //Do not change.
-global.author = "By: Kai";                               //Do not change.
-global.BotSourceCode = "https://github.com/Kai0071/A17"; //Do not change.
-global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
+global.Owner = ["2349067654525", "2348150735460"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.OwnerNumber = ["2349067654525", "2348150735460"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.ownertag = ["2349067654525"];
+global.OwnerName = "Cipher";
+global.BotName = "Shadow";
+global.packname = "SHADOW-MD";                             //Do not change.
+global.author = "By: Cipher";                               //Do not change.
+global.BotSourceCode = "https://github.com/CIpher0071/A17"; //Do not change.
+global.SupportGroupLink = "https://chat.whatsapp.com/FCfSLTySyqz1c7YPJD2KSm";
 module.exports = {
   SESSION_ID: (process.env.SESSION_ID || '').trim(),
-}; //SESSION_ID You got after scanning QRS
+};
 
 //
 global.sessionName = "session";                          //Do not change.
@@ -43,11 +43,11 @@ global.openAiAPI = "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";
 
 
 //
-global.location = "Tata City, India";
+global.location = "Benin city,Nigeria";
 global.reactmoji = "❤️";
 global.themeemoji = "💖";
 global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };
-global.websitex = "https://github.com/Kai0071";
+global.websitex = "https://github.com/Cipher0071";
 global.lolhuman = "KaysaS";
 
 
@@ -81,19 +81,19 @@ global.ntilink = []
 
 //
 global.mess = {
-  jobdone: 'Here you go...',
-  useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
-  botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-  botowner: 'Only my *Owner* can use this command, Baka!',
-  grouponly: 'This command is only made for *Groups*, Baka!',
-  privateonly: 'This command is only made for *Private Chat*, Baka!',
-  botonly: 'Only the *Bot itself* can use this command!',
-  waiting: 'Just Wait...',
+  jobdone: '🌸🌟 Yatta! It's all done',
+  useradmin: 'Gomenasai! This command is exclusive for the Admin-sama only! 🉐✨',
+  botadmin: 'Ah, this command can only be used when the Bot ascends to Admin mode! ✨🤖',
+  botowner: 'This command is wielded only by the esteemed Owner-sama 😌👑',
+  grouponly: 'This command can only be activated within the Group, gomenasai! Oopsie daisy! 🏞️',
+  privateonly: 'This command is a secret move, only to be used in private, senpai~ Shh! 🤫',
+  botonly: 'A special ability befitting the Bot, kawaii~ 🤖✨',
+  waiting: '⏳ Currently undergoing processing, my dear senpai~ Chotto mattae! 🕒',
   nolink: 'Please provide me *link*, Baka!',
   error: 'An error occurd!',
-  banned: 'You are *Banned* fron using commands!',
-  bangc: 'This Group is *Banned* from using Commands!',
-  nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
+  banned: 'gomen ne! you have been banned by  Owner-sama! 🚫🔒',
+  bangc: 'gomen ne! This group is banned by the Owner-sama! 🚫🔒',
+  nonsfw: 'gomen ne! This feature is sealed by the Owner-sama! 🚫🔒'
 
 }
 
