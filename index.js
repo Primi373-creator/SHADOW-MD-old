@@ -69,7 +69,7 @@ async function startshadow() {
   const shadow = shadowConnect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["shadow Bot", "Safari", "3.O"],
+    browser: ["SHADOW-MD", "Linux", "1.O"],
     auth: state,
   });
 
