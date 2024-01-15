@@ -6953,7 +6953,7 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
         let buttonMessage = {
-          video: fs.readFileSync('./system/sha.jpg'),
+          image: fs.readFileSync('./system/sha.jpg'),
           caption: helpmenu,
 
           headerType: 4
