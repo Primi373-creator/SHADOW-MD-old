@@ -6952,14 +6952,15 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-let buttonMessage = {
-  image: { url: 'https://i.pinimg.com/originals/51/a5/88/51a58806748ca1ee98507c287f9f8682.jpg' },
-  caption: helpmenu,
-  headerType: 4
-};
+ let buttonMessage = {
+          video: fs.readFileSync('./system/sha.jpg'), gifPlayback: true,
+          caption: helpmenu,
 
-shadow.sendMessage(m.chat, buttonMessage, MessageType.image, { quoted: m });
+          headerType: 4
 
+        }
+        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
         break;
 
 
@@ -7165,4 +7166,3 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
-
