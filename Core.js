@@ -15,9 +15,9 @@ const { addBalance } = require("./lib/limit.js");
 const { smsg, formatp, tanggal, GIFBufferToVideoBuffer, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, fetchBuffer } = require('./lib/myfunc')
 const _ = require("lodash");
 const yargs = require("yargs/yargs");
-const Ciphertime = moment.tz('Asia/Kolkata').format('HH:mm:ss');
-const Cipherdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
-const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+const Ciphertime = moment.tz('Africa/Lagos').format('HH:mm:ss');
+const Cipherdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY');
+const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss');
 const currentDate = new Date();
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
@@ -420,7 +420,7 @@ module.exports = shadow = async (shadow, m, chatUpdate, store) => {
       return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
     };
 
-    function updateStatus() {
+ /*   function updateStatus() {
       const uptimeInSeconds = Math.floor(process.uptime());
       const uptimeFormatted = formatTime(uptimeInSeconds);
 
@@ -438,7 +438,7 @@ module.exports = shadow = async (shadow, m, chatUpdate, store) => {
     }
 
     // Initial call to start the random status updates
-    updateStatus();
+    updateStatus();*/
 
 
 
