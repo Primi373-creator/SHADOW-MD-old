@@ -6952,15 +6952,15 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-        let buttonMessage = {
-          video: fs.readFileSync('./system/shadow_3.mp4'), gifPlayback: true,
-          caption: helpmenu,
+       let buttonMessage = {
+    video: fs.readFileSync('https://www.youtube.com/watch?v=56KyRixID30'),
+    gifPlayback: true,
+    caption: helpmenu,
+    headerType: 4
+};
 
-          headerType: 4
+shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
 
-        }
-        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
         break;
 
 
