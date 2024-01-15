@@ -15,9 +15,9 @@ const { addBalance } = require("./lib/limit.js");
 const { smsg, formatp, tanggal, GIFBufferToVideoBuffer, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, fetchBuffer } = require('./lib/myfunc')
 const _ = require("lodash");
 const yargs = require("yargs/yargs");
-const Ciphertime = moment.tz('Asia/Kolkata').format('HH:mm:ss');
-const Cipherdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
-const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss');
+const Ciphertime = moment.tz('Africa/Lagos').format('HH:mm:ss');
+const Cipherdate = moment.tz('Africa/lagos').format('DD/MM/YYYY');
+const time2 = moment().tz('Africa/lagos').format('HH:mm:ss');
 const currentDate = new Date();
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
@@ -6923,11 +6923,11 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ╰━━━━━━━━━━━━━━⊷ 
  
   ╭━━〘 *Others* 〙────⊷
-  ┃ ✘     ${prefix}stickermeme
-  ┃ ✘     ${prefix}quotes
-  ┃ ✘     ${prefix}report
-  ┃ ✘     ${prefix}afk
-  ┃ ✘     ${prefix}darkjoke
+  ┃ ✘    ${prefix}stickermeme
+  ┃ ✘    ${prefix}quotes
+  ┃ ✘    ${prefix}report
+  ┃ ✘    ${prefix}afk
+  ┃ ✘    ${prefix}darkjoke
   ╰━━━━━━━━━━━━━━⊷
 
   ╭━━〘 ⚠️ *NSFW* ⚠️ 〙────⊷
@@ -6952,14 +6952,13 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-       let buttonMessage = {
-    video: fs.readFileSync('https://www.youtube.com/watch?v=56KyRixID30'),
-    gifPlayback: true,
-    caption: helpmenu,
-    headerType: 4
+let buttonMessage = {
+  image: { url: 'https://i.pinimg.com/originals/51/a5/88/51a58806748ca1ee98507c287f9f8682.jpg' },
+  caption: helpmenu,
+  headerType: 4
 };
 
-shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
+shadow.sendMessage(m.chat, buttonMessage, MessageType.image, { quoted: m });
 
         break;
 
