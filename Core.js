@@ -7,6 +7,8 @@ const imagePaths = [
   './system/sha3.jpg',
   './system/sha4.jpg',
   './system/sha5.jpg',
+  './system/sha11.jpg',
+  './system/sha12.jpg',
   './system/sha6.jpg',
   './system/sha7.jpg',
   './system/sha8.jpg',
