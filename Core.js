@@ -1,6 +1,27 @@
 process.on("uncaughtException", console.error);
 require("./config");
+//==============================================================================//
+const imagePaths = [
+  './system/sha1.jpg',
+  './system/sha2.jpg',
+  './system/sha3.jpg',
+  './system/sha4.jpg',
+  './system/sha5.jpg',
+  './system/sha6.jpg',
+  './system/sha7.jpg',
+  './system/sha8.jpg',
+  './system/sha9.jpg',
+  './system/sha10.jpg',
+  './system/sha.jpg'
+];
+function getRandomElement(arr) {
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  return arr[randomIndex];
+}
+const randomImagePath = getRandomElement(imagePaths);
 
+
+//================================================================================//
 const fs = require('fs');
 const pm2 = require('pm2');
 const util = require("util");
@@ -51,17 +72,17 @@ const { MessageType } = require('@whiskeysockets/baileys');
 let nowtime = '';
 
 if (time2 < "05:00:00") {
-  nowtime = 'Good night 🏙';
+  nowtime = 'Oyasumi nasai 🏙';
 } else if (time2 < "11:00:00") {
-  nowtime = 'Good morning 🌅';
+  nowtime = 'Ohayou gozaimasu 🌅';
 } else if (time2 < "15:00:00") {
-  nowtime = 'Good afternoon 🏞';
+  nowtime = 'Konnichiwa 🏞';
 } else if (time2 < "18:00:00") {
-  nowtime = 'Good evening 🌇';
+  nowtime = 'Konbanwa 🌇';
 } else if (time2 < "19:00:00") {
-  nowtime = 'Good evening 🌆';
+  nowtime = 'Konbanwa 🌇';
 } else {
-  nowtime = 'Good night 🌌';
+  nowtime = 'Oyasumi nasai 🌌';
 }
 
 
@@ -6674,7 +6695,7 @@ _Click the button below to download_`
         shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
   
-konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
   
   
@@ -6941,7 +6962,8 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘       Developed By: *Cipher*
   ┃ ✘     
   ┃ ✘ 🍁 To use any of these
-  ┃ ✘ commands type.*${prefix}<Command name>*.
+  ┃ ✘ commands type.
+       *${prefix}<Command name>*.
   ┃ ✘     
   ┃ ✘     
   ┃ ✘ 🍁 To get Support Group link
@@ -6952,17 +6974,15 @@ konichiwa senpai!!!, I am "shadow" a WhatsApp bot create and recode by Cipher to
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-        let buttonMessage = {
-          image: fs.readFileSync('./system/sha.jpg'),
-          caption: helpmenu,
-
-          headerType: 4
-
-        }
+       const buttonMessage = {
+  image: fs.readFileSync(randomImagePath),
+  caption: helpmenu,
+  headerType: 4
+};
         shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
       }
         break;
-
+//=========================================================================================//
 
       case '':
         if (isCmd) {
