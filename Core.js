@@ -6965,7 +6965,7 @@ konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everyth
   ┃ ✘     
   ┃ ✘ 🍁 To use any of these
   ┃ ✘ commands type.
-       *${prefix}<Command name>*.
+  ┃ ✘ *${prefix}<Command name>*.
   ┃ ✘     
   ┃ ✘     
   ┃ ✘ 🍁 To get Support Group link
@@ -6976,13 +6976,19 @@ konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everyth
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-       const buttonMessage = {
-  image: fs.readFileSync(randomImagePath),
-  caption: helpmenu,
-  headerType: 4
-};
-        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
+       return {
+    image: fs.readFileSync(randomImagePath),
+    caption: helpmenu,
+    headerType: 4
+  };
+}
+    for (let i = 0; i < 2; i++) {
+  // Call the function to get the button message
+  const buttonMessage = createButtonMessage();
+
+  // Send the message with the random image
+  shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
+}
         break;
 //=========================================================================================//
 
