@@ -20,9 +20,6 @@ const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss');
 const currentDate = new Date();
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
-const imageHandler = require('./imageHandler');
-const imageDirectory = './system/';
-const randomImage = imageHandler.getRandomImage(imageDirectory);
 const speed = require('performance-now');
 const eco = require('discord-mongoose-economy');
 // const thiccysapi = require('textmaker-thiccy');
@@ -6671,8 +6668,7 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
        shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
   
-        const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
-   I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+        const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} , I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
   ╭━━〘* ${pushname}* 〙────⊷
   ┃ ✘ *prefix  :*  ${prefix}
@@ -6949,16 +6945,17 @@ _Click the button below to download_`
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
    
-if (randomImage) {
-  let buttonMessage = {
-    image: randomImage,
-    caption: helpmenu,
-    headerType: 4
-  };
+   let buttonMessage = {
+          image: fs.readFileSync('./system/sha10.jpg'),
+          caption: helpmenu,
 
-  shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
-}
+          headerType: 4
+
+        }
+        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
         break;
+       
 //=========================================================================================//
 
       case '':
