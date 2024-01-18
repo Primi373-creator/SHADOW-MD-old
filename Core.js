@@ -43,13 +43,6 @@ const os = require('os');       // for os info
 const gis = require("g-i-s");
 const { MessageType } = require('@whiskeysockets/baileys');
 //"parse-ms": "^1.1.0",
-//================================================================================================================//
-function getRandomFile(path) {
-  const files = fs.readdirSync(path);
-  const randomIndex = Math.floor(Math.random() * files.length);
-  return files[randomIndex];
-}
-//================================================================================================================//
 
 //
 let nowtime = '';
@@ -6951,13 +6944,16 @@ _Click the button below to download_`
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
    
-   let buttonMessage = {
-  image: fs.readFileSync(`./system/${getRandomFile('./system/')}`),
-  caption: helpmenu,
-  headerType: 4
-};
-     shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
-        break;
+     let buttonMessage = {
+          image: fs.readFileSync('./system/sha5.jpg'), 
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;;
        
 //=========================================================================================//
 
