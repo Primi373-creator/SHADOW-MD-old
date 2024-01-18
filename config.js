@@ -85,7 +85,7 @@ global.mess = {
   useradmin: 'Gomenasai! This command is exclusive for the Admin-sama only! 🉐✨',
   botadmin: 'Ah, this command can only be used when the Bot ascends to Admin mode! ✨🤖',
   botowner: 'This command is wielded only by the esteemed Owner-sama 😌👑',
-  grouponly: 'This command can only be activated within the Group, gomenasai! Oopsie daisy! 🏞️',
+  grouponly: 'This command can only be activated within the Group, gomenasai! 🏞️',
   privateonly: 'This command is a secret move, only to be used in private, senpai~ Shh! 🤫',
   botonly: 'A special ability befitting the Bot, kawaii~ 🤖✨',
   waiting: '⏳ Currently undergoing processing, my dear senpai~ Chotto mattae! 🕒',
