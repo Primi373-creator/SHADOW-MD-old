@@ -6667,15 +6667,14 @@ _Click the button below to download_`
 
 
 
-function createImageMessage() {
-  // Select a random image path using the imported function
-  const randomImagePath = getRandomImagePath();
-
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
-      
+    function createImageMessage() {
+  // Select a random image path using the imported function
+  const randomImagePath = getRandomImagePath();
+  
         const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
    I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
