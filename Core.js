@@ -6665,12 +6665,6 @@ _Click the button below to download_`
       }
         break;
 
-
-
-      case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
-        if (isBan) return reply(mess.banned);
-        if (isBanChat) return reply(mess.bangc);
-        shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
     function createImageMessage() {
   // Select a random image path using the imported function
   const randomImagePath = getRandomImagePath();
@@ -6958,6 +6952,15 @@ _Click the button below to download_`
     headerType: 4
   };
 }
+case 'help':
+case 'h':
+case 'menu':
+case 'allmenu':
+case 'listmenu': {
+  if (isBan) return reply(mess.banned);
+  if (isBanChat) return reply(mess.bangc);
+  
+  shadow.sendMessage(from, { react: { text: "✨", key: m.key } });
   const imageMessage = createImageMessage();
 shadow.sendMessage(m.chat, imageMessage, { quoted: m });      
         break;
