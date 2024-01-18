@@ -6976,19 +6976,16 @@ konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everyth
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-       return {
-    image: fs.readFileSync(randomImagePath),
-    caption: helpmenu,
-    headerType: 4
-  };
-}
-    for (let i = 0; i < 2; i++) {
-  // Call the function to get the button message
-  const buttonMessage = createButtonMessage();
+      let buttonMessage = {
+          video: fs.readFileSync('./system/shadow_3.mp4'), gifPlayback: true,
+          caption: helpmenu,
 
-  // Send the message with the random image
-  shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
-}
+          headerType: 4
+
+        }
+        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
         break;
 //=========================================================================================//
 
