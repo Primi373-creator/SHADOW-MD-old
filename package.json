@@ -7,8 +7,8 @@
         "lib": "lib"
     },
     "scripts": {
-        "start": "node shadow.js",
-        "test": "node shadow.js"
+        "start": "node index.js",
+        "test": "node index.js"
     },
     "repository": {
         "type": "git",
@@ -43,6 +43,7 @@
         "axios": "^0.24.0",
         "canvacord": "^5.4.10",
         "cfonts": "^2.9.0",
+        "@colors/colors": "1.5.0",
         "chalk": "^4.1.2",
         "cheerio": "^1.0.0-rc.12",
         "child_process": "^1.0.2",
@@ -53,6 +54,7 @@
         "express": "^4.18.2",
         "ffmpeg": "^0.0.4",
         "ffmpeg-static": "^5.1.0",
+        "fs-extra": "^11.1.1",
         "figlet": "^1.5.0",
         "file-type": "^16.5.3",
         "fluent-ffmpeg": "^2.1.2",
