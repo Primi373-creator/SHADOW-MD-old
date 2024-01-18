@@ -6948,23 +6948,15 @@ _Click the button below to download_`
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-    if (imageFiles.length > 0) {
-  // Randomly select an image file
-  const randomImageFile = imageFiles[Math.floor(Math.random() * imageFiles.length)];
-
-  // Construct the full path to the selected image file
-  const imagePath = path.join(imageDirectory, randomImageFile);
-
-  // Use the selected image in your buttonMessage
+   
+if (randomImage) {
   let buttonMessage = {
-    image: fs.readFileSync(imagePath),
+    image: randomImage,
     caption: helpmenu,
     headerType: 4
   };
 
   shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
-} else {
-  console.error('No image files found in the specified directory.');
 }
         break;
 //=========================================================================================//
