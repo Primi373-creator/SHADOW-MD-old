@@ -6666,11 +6666,11 @@ _Click the button below to download_`
    case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-       shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
+       shadow.sendMessage(from, { react: { text: "👻", key: m.key } })
   
-        const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} , I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+        const helpmenu = ` ${nowtime}  *${pushname}* Senpai!! , I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
-  ╭━━〘* ${pushname}* 〙────⊷
+  ╭━━〘 *${pushname}* 〙────⊷
   ┃ ✘ *prefix  :*  ${prefix}
   ┃ ✘ *Owner:* ${global.OwnerName} 
   ┃ ✘ *runtime :* ${runtime(process.uptime())} 
@@ -6794,7 +6794,7 @@ _Click the button below to download_`
   ┃ ✘  ${prefix}emojimix
   ╰━━━━━━━━━━━━━━⊷
 
-  ╭━━〘 Sound Edit 〙────⊷
+  ╭━━〘 *Sound Edit* 〙────⊷
   ┃ ✘  ${prefix}ringtone
   ┃ ✘  ${prefix}bass
   ┃ ✘  ${prefix}tempo
@@ -6922,25 +6922,25 @@ _Click the button below to download_`
   ╰━━━━━━━━━━━━━━⊷
 
   ╭━━〘 ⚠️ *NSFW* ⚠️ 〙────⊷
-  ┃ ✘ 🍁 Type *${prefix}nsfw* then enable 
+  ┃ ✘ ℹ️ Type *${prefix}nsfw* then enable 
   ┃ ✘       NSFW (Admin only!)
   ┃ ✘     
-  ┃ ✘ 🍁 Then type *${prefix}nsfwmenu* for
+  ┃ ✘ ℹ️ Then type *${prefix}nsfwmenu* for
   ┃ ✘       all NSFW commands.
   ┃ ✘     
   ┃ ✘ 『  *${global.BotName}*  』
   ┃ ✘       Developed By: *Cipher*
   ┃ ✘     
-  ┃ ✘ 🍁 To use any of these
-  ┃ ✘ commands type.
-  ┃ ✘ *${prefix}<Command name>*.
+  ┃ ✘ ℹ️ To use any of these
+  ┃ ✘     commands type.
+  ┃ ✘   *${prefix}<Command name>*.
   ┃ ✘     
   ┃ ✘     
-  ┃ ✘ 🍁 To get Support Group link
+  ┃ ✘ ℹ️ To get Support Group link
   ┃ ✘      type *${prefix}support*.
   ┃ ✘     
   ┃ ✘     
-  ┃ ✘ 🍁 Type *${prefix}help* to get
+  ┃ ✘ ℹ️ Type *${prefix}help* to get
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
