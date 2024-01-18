@@ -6674,8 +6674,7 @@ _Click the button below to download_`
         shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
       
         const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
-  
-konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+   I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
   
   
