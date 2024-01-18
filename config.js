@@ -80,7 +80,7 @@ global.ntilink = []
 global.mess = {
   jobdone: '🌸🌟 Yatta! Its all done',
   useradmin: 'Gomenasai! This command is exclusive for the Admin-sama only! 🉐✨',
-  botadmin: '*Provide me Admin Role, Senpai❗, Grant me the power that I seek.*,
+  botadmin: '*Provide me Admin Role, Senpai❗, Grant me the power that I seek.*',
   botowner: '⚠️ This Command is exclusively for My Owner. The one who holds the key to my existence',
   grouponly: 'Gomen ne! ❗ This Feature is Only for Groups. The collective must be acknowledged.',
   privateonly: 'This command is a secret move, only to be used in private, senpai~ Shh! 🤫',
