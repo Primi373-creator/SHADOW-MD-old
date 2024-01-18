@@ -1,29 +1,6 @@
 process.on("uncaughtException", console.error);
 require("./config");
-//==============================================================================//
-const imagePaths = [
-  './system/sha1.jpg',
-  './system/sha2.jpg',
-  './system/sha3.jpg',
-  './system/sha4.jpg',
-  './system/sha5.jpg',
-  './system/sha11.jpg',
-  './system/sha12.jpg',
-  './system/sha6.jpg',
-  './system/sha7.jpg',
-  './system/sha8.jpg',
-  './system/sha9.jpg',
-  './system/sha10.jpg',
-  './system/sha.jpg'
-];
-function getRandomElement(arr) {
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  return arr[randomIndex];
-}
-const randomImagePath = getRandomElement(imagePaths);
-
-
-//================================================================================//
+const getRandomImagePath = require('./image');
 const fs = require('fs');
 const pm2 = require('pm2');
 const util = require("util");
@@ -6695,6 +6672,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         shadow.sendMessage(from, { react: { text: "✨", key: m.key } })
+      
         const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
   
 konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
@@ -6977,7 +6955,7 @@ konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everyth
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
       let buttonMessage = {
-          video: fs.readFileSync('./system/shadow_3.mp4'), gifPlayback: true,
+          image: fs.readFileSync('getRandomImagePath'),
           caption: helpmenu,
 
           headerType: 4
@@ -6985,7 +6963,6 @@ konichiwa senpai!!!, I'm "shadow" a WhatsApp bot created by Cipher to do everyth
         }
         shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
       }
-        break;
         break;
 //=========================================================================================//
 
