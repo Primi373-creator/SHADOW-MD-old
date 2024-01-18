@@ -20,7 +20,9 @@ const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss');
 const currentDate = new Date();
 const options = { weekday: 'long' }; // Specify 'long' to get the full day name
 const currentDay = new Intl.DateTimeFormat('en-US', options).format(currentDate);
-
+const path = require('path');
+const imageDirectory = './system/';
+const imageFiles = fs.readdirSync(imageDirectory);
 const speed = require('performance-now');
 const eco = require('discord-mongoose-economy');
 // const thiccysapi = require('textmaker-thiccy');
@@ -6946,15 +6948,24 @@ _Click the button below to download_`
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-     let buttonMessage = {
-          image: fs.readFileSync('./system/sha5.jpg'), 
-          caption: helpmenu,
+    if (imageFiles.length > 0) {
+  // Randomly select an image file
+  const randomImageFile = imageFiles[Math.floor(Math.random() * imageFiles.length)];
 
-          headerType: 4
+  // Construct the full path to the selected image file
+  const imagePath = path.join(imageDirectory, randomImageFile);
 
-        }
-        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
+  // Use the selected image in your buttonMessage
+  let buttonMessage = {
+    image: fs.readFileSync(imagePath),
+    caption: helpmenu,
+    headerType: 4
+  };
+
+  shadow.sendMessage(m.chat, buttonMessage, { quoted: m });
+} else {
+  console.error('No image files found in the specified directory.');
+}
         break;
 //=========================================================================================//
 
