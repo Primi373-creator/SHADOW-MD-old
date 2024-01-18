@@ -1,6 +1,6 @@
 process.on("uncaughtException", console.error);
 require("./config");
-const getRandomImagePath = require('./image');
+const getRandomImagePath = require('./images');
 const fs = require('fs');
 const pm2 = require('pm2');
 const util = require("util");
@@ -6667,6 +6667,9 @@ _Click the button below to download_`
 
 
 
+function createImageMessage() {
+  // Select a random image path using the imported function
+  const randomImagePath = getRandomImagePath();
 
       case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu': {
         if (isBan) return reply(mess.banned);
@@ -6675,9 +6678,6 @@ _Click the button below to download_`
       
         const helpmenu = `Konichiwa *${pushname}* Senpai!! ${nowtime} ,
    I'm "shadow" a WhatsApp bot created by Cipher to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
-
-  
-  
 
   ╭━━〘* ${pushname}* 〙────⊷
   ┃ ✘ *prefix  :*  ${prefix}
@@ -6953,15 +6953,14 @@ _Click the button below to download_`
   ┃ ✘        full command list.
   ┃ ✘
   ╰━━━━━━━━━━━━━━⊷ `
-      let buttonMessage = {
-          image: fs.readFileSync('getRandomImagePath'),
-          caption: helpmenu,
-
-          headerType: 4
-
-        }
-        shadow.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
+     return {
+    image: fs.readFileSync(randomImagePath),
+    caption: helpmenu,
+    headerType: 4
+  };
+}
+  const imageMessage = createImageMessage();
+shadow.sendMessage(m.chat, imageMessage, { quoted: m });      
         break;
 //=========================================================================================//
 
