@@ -6952,13 +6952,6 @@ _Click the button below to download_`
     headerType: 4
   };
 }
-case 'help':
-case 'h':
-case 'menu':
-case 'allmenu':
-case 'listmenu': {
-  if (isBan) return reply(mess.banned);
-  if (isBanChat) return reply(mess.bangc);
   
   shadow.sendMessage(from, { react: { text: "✨", key: m.key } });
   const imageMessage = createImageMessage();
