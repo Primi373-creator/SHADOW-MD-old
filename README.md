@@ -16,7 +16,7 @@
     <a href='https://www.back4app.com/' target="_blank"> <img alt='Replit' src='https://img.shields.io/badge/Replit-000000?style=for-the-badge&logo=Replit&logoColor=white&labelColor=000000&color=000000'/> </a>
  5.  Deploy to Heroku
     <br>
-    <a href='https://www.back4app.com/' target="_blank"> <img alt='Heroku' src='https://img.shields.io/badge/Heroku-000000?style=for-the-badge&logo=Heroku&logoColor=white&labelColor=000000&color=000000'/> </a>
+    <a href='https://heroku.com/deploy?template=https://github.com/Cipher0071/SHADOW-MD' target="_blank"> <img alt='Heroku' src='https://img.shields.io/badge/Heroku-000000?style=for-the-badge&logo=Heroku&logoColor=white&labelColor=000000&color=000000'/> </a>
  
 
 
